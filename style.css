@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --color-dark: rgb(51, 51, 51);
+  --color-ligth: rgb(196, 196, 196);
+  --color-primary: rgb(193, 39, 45);
+  --background-img: rgba(52, 52, 52, 0.3);
+  --background-block: rgba(86, 19, 21, 0.4);
+  --background-header: rgb(167, 167, 167);
+  --color-secondary: rgba(252, 163, 44, 0.8);
+}
+
+.container {
+  margin-inline: 4%;
+}
+
+/*========== HEADER ==========*/
+#header {
+  height: 6.25rem;
+  background: var(--background-header);
+}
+
+#header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header img {
+  width: 6.25rem;
+  height: auto;
+}
+
+/*========== PRESENTATION ==========*/
+#presentation {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      0deg,
+      var(--background-img),
+      var(--background-img)
+    ),
+    url(imagens/computador.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.novo {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  color: var(--color-ligth);
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner ul {
+  background-color: var(--background-block);
+
+  padding: 1rem;
+  list-style-position: inside;
+  text-align: justify;
+  font-size: 0.875rem;
+}
+
+.banner ul li {
+  padding-block: 0.5rem;
+}
+
+.container-forms {
+  padding-block: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forms {
+  width: 100%;
+  height: 100%;
+  max-width: 32rem;
+  padding: 0.625rem;
+  background-color: var(--color-ligth);
+  border: 0.5rem solid var(--background-img);
+  background-clip: padding-box;
+}
+
+.forms h2 {
+  color: var(--color-dark);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.forms h5 {
+  color: var(--color-dark);
+  margin-top: 1rem;
+}
+
+.input-form {
+  margin-top: 1.5rem;
+}
+
+.input-form p {
+  color: var(--color-dark);
+}
+
+.input-form .input {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color-ligth);
+}
+
+.input-form .input:focus {
+  outline: 0;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-form .btn {
+  width: 9rem;
+  height: 2.8rem;
+  color: var(--color-ligth);
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--color-primary);
+  border: 0;
+  border-bottom: 0.3rem solid var(--color-secondary);
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.5s;
+}
+
+.input-form .btn:hover {
+  background-color: rgb(86, 19, 21);
+}
+
+/*========== DETAILS ==========*/
+.details {
+  background: var(--color-ligth);
+  padding: 4rem 0;
+  color: var(--color-dark);
+}
+
+.details h2 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.details p {
+  text-align: justify;
+  margin-inline: auto;
+  font-size: 0.875rem;
+  max-width: 64rem;
+}
+
+.arrow {
+  background-image: url(imagens/seta.png);
+  width: 3rem;
+  height: 3rem;
+  background-size: 100% 100%;
+  position: relative;
+  top: 5.5rem;
+  left: 50%;
+  margin-left: -1.5rem;
+}
+
+/*========== SERVICES ==========*/
+#services {
+  padding-block: 6rem;
+}
+
+.title {
+  padding-bottom: 4rem;
+}
+
+.title h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--color-primary);
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service {
+  box-shadow: 0px 0px 12px rgba(193, 39, 45, 0.2);
+  text-align: center;
+  border-bottom: 0.25rem solid var(--color-secondary);
+  margin: 1rem 0;
+  padding: 2rem 2rem;
+  max-width: 26rem;
+}
+
+.service h3 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin: 0.5rem 0;
+}
+
+.service p {
+  text-align: left;
+}
+
+/*========== FOOTER ==========*/
+footer {
+  border-top: 0.2rem solid var(--color-primary);
+  padding: 3rem 0;
+  text-align: center;
+  background: var(--color-dark);
+  color: var(--color-ligth);
+}
+
+footer p {
+  margin-top: 1rem;
+}
+
+@media (min-width: 769px) {
+  .novo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #presentation .banner {
+    max-width: 36rem;
+  }
+
+  #presentation .container-forms {
+    min-width: 23rem;
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .novo {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-container {
+    flex-direction: row;
+  }
+
+  .service {
+    margin: 1rem 0.5rem;
+  }
+
+  #presentation .container-forms {
+    min-width: 25rem;
+    margin-left: 6rem;
+  }
+}

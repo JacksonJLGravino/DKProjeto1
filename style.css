@@ -13,7 +13,7 @@ body {
 
 :root {
   --color-dark: rgb(51, 51, 51);
-  --color-ligth: rgb(196, 196, 196);
+  --color-light: rgb(196, 196, 196);
   --color-primary: rgb(193, 39, 45);
   --background-img: rgba(52, 52, 52, 0.3);
   --background-block: rgba(86, 19, 21, 0.4);
@@ -62,7 +62,7 @@ body {
 }
 
 .banner {
-  color: var(--color-ligth);
+  color: var(--color-light);
   padding-top: 2rem;
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@ body {
   height: 100%;
   max-width: 32rem;
   padding: 0.625rem;
-  background-color: var(--color-ligth);
+  background-color: var(--color-light);
   border: 0.5rem solid var(--background-img);
   background-clip: padding-box;
 }
@@ -123,7 +123,7 @@ body {
   width: 100%;
   height: 3rem;
   padding: 0.5rem;
-  border: 1px solid var(--color-ligth);
+  border: 1px solid var(--color-light);
 }
 
 .input-form .input:focus {
@@ -140,7 +140,7 @@ body {
 .input-form .btn {
   width: 9rem;
   height: 2.8rem;
-  color: var(--color-ligth);
+  color: var(--color-light);
   font-weight: bold;
   text-transform: uppercase;
   background-color: var(--color-primary);
@@ -157,7 +157,7 @@ body {
 
 /*========== DETAILS ==========*/
 .details {
-  background: var(--color-ligth);
+  background: var(--color-light);
   padding: 4rem 0;
   color: var(--color-dark);
 }
@@ -235,7 +235,7 @@ footer {
   padding: 3rem 0;
   text-align: center;
   background: var(--color-dark);
-  color: var(--color-ligth);
+  color: var(--color-light);
 }
 
 footer p {

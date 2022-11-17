@@ -2,7 +2,7 @@
 
 ## Sobre
 
-<p>Esse projeto foi feito a partir de uma adaptação de um projeto de um curso, como forma de aprendizado e desenvolvimento.</p>
+<p>Esse projeto foi feito a partir de uma adaptação de um projeto de um curso, para fins de estudo e pratica.</p>
 
 ## Características
 
